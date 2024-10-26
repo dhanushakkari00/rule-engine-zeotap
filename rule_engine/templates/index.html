@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="{% static 'rule_engine/styles.css' %}">
+</head>
+<body>
+    <h1>Rule Engine</h1>
+
+    <!-- First Panel: Create Rule -->
+    <div class="panel">
+        <h2>Create Rule</h2>
+        <form id="create-rule-form">
+            <label for="rule-string">Enter Rule:</label>
+            <input type="text" id="rule-string" placeholder="(e.g., age > 30 AND salary > 50000)" />
+            <button type="submit">Create Rule</button>
+        </form>
+        <h3>Rules Set:</h3>
+        <ul id="rules-list"></ul> <!-- To display the rules -->
+        <h3>AST Representation:</h3>
+        <div id="ast-representation"></div> <!-- To display the AST -->
+    </div>
+
+    <!-- Second Panel: Combine Rules -->
+    <div class="panel">
+        <h2>Combine Rules</h2>
+        <textarea id="combine-rules-textarea" rows="4" placeholder="Enter multiple rules separated by line"></textarea>
+        <button id="combine-rules-button">Combine Rules</button>
+        <h3>Combined AST Representation:</h3>
+        <div id="combined-ast-representation"></div> <!-- To display the combined AST -->
+    </div>
+
+    <!-- Third Panel: Evaluate Rule -->
+    <div class="panel">
+        <h2>Evaluate Rule</h2>
+        <form id="evaluate-rule-form">
+            <label for="age">Enter age:</label>
+            <input type="text" id="age" placeholder="Enter age" />
+            <label for="department">Enter department:</label>
+            <input type="text" id="department" placeholder="Enter department" />
+            <label for="salary">Enter salary:</label>
+            <input type="text" id="salary" placeholder="Enter salary" />
+            <label for="experience">Enter experience:</label>
+            <input type="text" id="experience" placeholder="Enter experience" />
+            <button type="submit">Evaluate Rule</button>
+        </form>
+        <h3>Evaluation Result:</h3>
+        <div id="evaluation-result"></div> <!-- To display the result of evaluation -->
+    </div>
+
+    <script src="{% static 'rule_engine/script.js' %}"></script>
+</body>
+</html>

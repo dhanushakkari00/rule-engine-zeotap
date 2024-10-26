@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #4a90e2;
+  color: white;
+  font-size: 2rem;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.rule-creation-block {
+  background: #e9f5ff; /* Light blue background for the rule creation section */
+}
+
+.rule-evaluation-block {
+  background: #ffffff; /* Standard white background for the rule evaluation section */
+}
+
+h2 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.btn {
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #357ab7;
+}
+
+#rules-summary {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#rules-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#rules-list li {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+#evaluation-result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #4a90e2;
+  text-align: center;
+}
+
+#evaluation-result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #4a90e2;
+  text-align: center;
+}
